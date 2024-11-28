@@ -1,0 +1,199 @@
+/* #root {
+  max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center;
+} */
+
+body{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* CSS for the scrollable container */
+.scroll-container {
+  max-height: 800px; /* Adjust the height as needed */
+  overflow-y: auto;  /* Make it scrollable */
+}
+
+/* CSS for the News Bar */
+.news-bar {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.news-bar-item {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  padding: 15px; /* Add padding to give it more space */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners for the card */
+  margin-bottom: 20px; /* Space between items */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for the card effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  cursor: pointer;
+}
+
+.news-bar-item:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.news-bar-item img {
+  width: 150px; /* Set a fixed width for the image */
+  height: 100px; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+  border-radius: 8px; /* Round corners for the image */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.news-bar-item .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: calc(100% - 170px); /* Ensure text takes up remaining space */
+}
+
+.news-bar-item h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.news-bar-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+/* Main Body Background */
+body {
+  background-color: #FFFFFF; /* White */
+}
+
+/* Left Column (Sidebar) */
+/* .col-2 {
+  background-color: #F5F5F5; /* Light gray */
+ /* padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+} */
+
+/* Right Column (Top Headlines) */
+.headlines {
+  background-color: #EEEEEE; /* Slightly darker gray */
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+/* Navbar and Buttons */
+.navbar {
+  background-color: #BDBDBD; /* Soft gray for the navbar */
+}
+
+.btn-outline-primary {
+  border-color: #BDBDBD;
+  color: #BDBDBD;
+}
+
+.btn-outline-primary:hover {
+  background-color: #BDBDBD;
+  color: #FFFFFF;
+}
+
+/* General Content */
+.scroll-container {
+  background-color: #FFFFFF; /* White background for content */
+}
+
+.news-bar-item {
+  background-color: #F5F5F5; /* Light gray for news bar items */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.news-bar-item:hover {
+  background-color: #E0E0E0; /* Slightly darker on hover */
+}
+
+/* Add some subtle shadows to containers */
+.rounded-3 {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5; /* Light gray */
+  padding: 20px;
+  border-radius: 8px;
+  /* height: 90%; */
+}
+
+
+/* Remove Bootstrap list styles */
+.category-list {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.category-item {
+  background-color: transparent; /* Transparent background */
+  padding: 10px 15px; /* Add padding for spacing */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Pointer cursor for clickable items */
+  border-bottom: 2px solid transparent; /* Transparent bottom border */
+  transition: background-color 0.3s ease, border-bottom 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for category items */
+.category-item:hover {
+  background-color: #fafafa; /* Very light gray on hover */
+  border-bottom: 2px solid #dcdcdc; /* Light gray bottom border on hover */
+}
+
+
+.category-item.active {
+  background-color: #f0f0f0; /* Light gray background for active state */
+  border-bottom: 2px solid #007bff; /* Blue bottom border for active state */
+  font-weight: bold; /* Make the text bold for active category */
+}
